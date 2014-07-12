@@ -1,0 +1,31 @@
+<!doctype html!>
+<html>
+    <head>
+        <title>jenkish</title>
+        <link rel="stylesheet" href="lib/epoch/epoch.0.5.2.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+    </head>
+    <body>
+
+    ta da ba
+    <div id="pie" class="epoch category10" style="width: 400px; height: 400px"></div>
+
+    <script src="lib/jquery/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/d3/d3.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="lib/epoch/epoch.0.5.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var pieData = [
+          { label: 'Slice 1', value: 10 },
+          { label: 'Slice 2', value: 20 },
+          { label: 'Slice 3', value: 40 },
+          { label: 'Slice 4', value: 30 }
+        ]
+      $('#pie').epoch({
+        type: 'pie',
+        data: pieData
+      });
+    </script>
+
+    </body>
+</html>
